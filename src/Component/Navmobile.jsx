@@ -39,13 +39,13 @@ const Navmobile = () => {
     
 
     <div
-  className={`flex flex-col w-[360px] gap-[20px] p-[5px] items-center justify-center bg-white rounded-[8px]
+  className={`flex flex-col w-[100%] gap-[20px] p-[5px] items-center justify-center bg-white rounded-[8px]
   transition-all duration-700 ease-in-out transform h-fit
   ${nav ? "opacity-100 translate-y-0 h-[350px]" : "opacity-0 -translate-y-5 h-0 overflow-hidden p-[10px]"}
   `}
 >
   <Link className='text-[20px] text-pink-500 font-bold'>Home</Link>
-  <Link  to={"/About"}className='text-[20px] text-pink-500 font-bold'>About</Link>
+  <Link  to={"/"}className='text-[20px] text-pink-500 font-bold'>About</Link>
   <Link to={"/Contact"} className='text-[20px] text-pink-500 font-bold'>Contact</Link>
   <Link className='text-[20px] text-pink-500 font-bold'>Blog</Link>
 
