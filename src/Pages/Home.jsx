@@ -26,7 +26,7 @@ import Footerdiv from '../Component/Footerdiv'
 const Home = () => {
  
   return (
-  <div>
+  <div className='overflow-hidden'>
 
 
       <Navpc/>

@@ -12,7 +12,7 @@ const Sec9 = () => {
 
   return (
     <section
-      className="p-4 md:p-20"
+      
       style={{
         background: `url(${fullhero})`,
         backgroundPosition: "center",

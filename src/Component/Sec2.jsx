@@ -6,7 +6,7 @@ import playbutton from "../assets/playbutton.png"
 
 const Sec2 = () => {
   return (
-    <div className="flex flex-col">
+    <div>
       {/* made this container relative so absolute children are contained */}
       <div
         className="relative flex items-center justify-center h-screen w-[100%]"

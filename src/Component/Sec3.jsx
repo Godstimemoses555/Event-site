@@ -17,7 +17,7 @@ const Sec3 = () => {
   const [bum, setBum] = useState(false);
 
   return (
-    <div className="overflow-x-hidden w-full">
+    <div>
       <div
         className="flex flex-col items-center justify-center p-2.5 w-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${fullhero})` }}
