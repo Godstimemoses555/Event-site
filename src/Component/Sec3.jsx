@@ -17,13 +17,16 @@ const Sec3 = () => {
   const [bum, setBum] = useState(false);
 
   return (
-    <div>
+    // ✅ Ensure no overflow horizontally or vertically
+    <div className="">
       <div
-        className="flex flex-col items-center justify-center p-2.5 w-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${fullhero})` }}
+        className="flex flex-col items-center justify-center p-5 w-full"
+        style={{
+          background: `url(${fullhero}) center/cover no-repeat`,
+        }}
       >
         {/* Header section */}
-        <div className="flex flex-col items-center text-center gap-4  w-[1200px]  mb-10 px-2.5">
+        <div className="flex flex-col items-center text-center gap-4 w-full max-w-[1000px] mb-10 px-4">
           <img
             className="w-[80%] sm:w-[60%] md:w-[40%] h-auto object-contain"
             src={header2}
@@ -38,17 +41,17 @@ const Sec3 = () => {
         </div>
 
         {/* Main section */}
-        <div className="flex flex-col md:flex-row gap-10 md:gap-16 w-[1200px]  px-4 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-16 w-full max-w-[1200px] px-4 md:px-8 items-center justify-center">
           {/* LEFT COLUMN */}
           <div className="flex flex-col w-full md:w-1/2 gap-4 items-center">
-            <div className="bg-white border-t-4 border-pink-500  text-center font-bold text-[20px] w-full max-w-[300px]">
+            <div className="bg-white border-t-4 border-pink-500 rounded-md py-3 text-center font-bold text-[20px] w-full max-w-[400px]">
               24 December 2021
             </div>
 
             {/* ITEM 1 */}
             {!pick ? (
               <div
-                className="bg-cyan-950  p-2.5 flex items-center justify-between w-[300px] cursor-pointer transition"
+                className="bg-cyan-950 rounded-md p-3 flex items-center justify-between w-full max-w-[400px] cursor-pointer transition"
                 onClick={() => setPick(true)}
               >
                 <img className="w-[50px]" src={user1} alt="" />
@@ -59,7 +62,7 @@ const Sec3 = () => {
               </div>
             ) : (
               <div
-                className="bg-white  p-2.5 w-[300px] text-center cursor-pointer transition"
+                className="bg-white rounded-md p-5 w-full max-w-[400px] text-center cursor-pointer transition"
                 onClick={() => setPick(false)}
               >
                 <h2 className="text-pink-500 font-bold text-[20px] mb-3">
@@ -73,12 +76,66 @@ const Sec3 = () => {
               </div>
             )}
 
-            {/* Other items */}
-            {/* ... your other blocks here, same structure ... */}
 
+            {!click ? (
+              <div
+                className="bg-cyan-950 rounded-md p-3 flex items-center justify-between w-full max-w-[400px] cursor-pointer transition"
+                onClick={() => setPick(true)}
+              >
+                <img className="w-[50px]" src={user1} alt="" />
+                <h2 className="text-white font-semibold text-[16px] md:text-[20px] text-center flex-1">
+                  Registration & Breakfast
+                </h2>
+                <img className="w-[20px]" src={twodots} alt="" />
+              </div>
+            ) : (
+              <div
+                className="bg-white rounded-md p-5 w-full max-w-[400px] text-center cursor-pointer transition"
+                onClick={() => setPick(false)}
+              >
+                <h2 className="text-pink-500 font-bold text-[20px] mb-3">
+                  Registration Break
+                </h2>
+                <p className="text-black font-medium leading-relaxed text-[15px]">
+                  Phosrescen ntiate principle-centered networks via magnetic
+                  Apildous eviscuate standards compliant fully tested metrics
+                  without creative design futureproof web.
+                </p>
+              </div>
+            )}
+
+            {/* ITEM 2 */}
+            {!open ? (
+              <div
+                className="bg-cyan-950 rounded-md p-3 flex items-center justify-between w-full max-w-[400px] cursor-pointer transition"
+                onClick={() => setOpen(true)}
+              >
+                <img className="w-[50px]" src={icon1} alt="" />
+                <h2 className="text-white font-semibold text-[16px] md:text-[20px] text-center flex-1">
+                  Launch Break
+                </h2>
+                <img className="w-[20px]" src={twodots} alt="" />
+              </div>
+            ) : (
+              <div
+                className="bg-white rounded-md p-5 w-full max-w-[400px] text-center cursor-pointer transition"
+                onClick={() => setOpen(false)}
+              >
+                <h2 className="text-pink-500 font-bold text-[20px] mb-3">
+                  Launch Break
+                </h2>
+                <p className="text-black font-medium leading-relaxed text-[15px]">
+                  Phosrescen ntiate principle-centered networks via magnetic
+                  Apildous eviscuate standards compliant fully tested metrics
+                  without creative design futureproof web.
+                </p>
+              </div>
+            )}
+
+            {/* ITEM 3 */}
             {!chop ? (
               <div
-                className="bg-cyan-950  p-2.5 flex items-center justify-between w-[300px] cursor-pointer transition"
+                className="bg-cyan-950 rounded-md p-3 flex items-center justify-between w-full max-w-[400px] cursor-pointer transition"
                 onClick={() => setChop(true)}
               >
                 <img className="w-[50px]" src={user4} alt="" />
@@ -89,7 +146,7 @@ const Sec3 = () => {
               </div>
             ) : (
               <div
-                className="bg-white  p-2.5 w-full  sm:w-[400px] text-center cursor-pointer transition"
+                className="bg-white rounded-md p-5 w-full max-w-[400px] text-center cursor-pointer transition"
                 onClick={() => setChop(false)}
               >
                 <h2 className="text-pink-500 font-bold text-[20px] mb-3">
@@ -106,11 +163,11 @@ const Sec3 = () => {
 
           {/* RIGHT COLUMN */}
           <div className="flex flex-col w-full md:w-1/2 gap-4 items-center">
-            <div className="bg-white border-t-4 border-pink-500  text-center font-bold text-[20px]  w-[300px]">
+            <div className="bg-white border-t-4 border-pink-500 rounded-md py-3 text-center font-bold text-[20px] w-full max-w-[400px]">
               24 December 2021
             </div>
 
-            {[
+            {[ 
               { state: bum, setState: setBum, title: "Reinventing Experience" },
               { state: path, setState: setPath, title: "Launch Break" },
               { state: view, setState: setView, title: "Digital Event Information" },
@@ -119,7 +176,7 @@ const Sec3 = () => {
               !state ? (
                 <div
                   key={i}
-                  className="bg-cyan-950 p-2.5 flex items-center justify-betweenw-[300px] cursor-pointer transition"
+                  className="bg-cyan-950 rounded-md p-3 flex items-center justify-between w-full max-w-[400px] cursor-pointer transition"
                   onClick={() => setState(true)}
                 >
                   <img className="w-[50px]" src={user1} alt="" />
@@ -131,7 +188,7 @@ const Sec3 = () => {
               ) : (
                 <div
                   key={i}
-                  className="bg-white  p-2.5 w-[300px] text-center cursor-pointer transition"
+                  className="bg-white rounded-md p-5 w-full max-w-[400px] text-center cursor-pointer transition"
                   onClick={() => setState(false)}
                 >
                   <h2 className="text-pink-500 font-bold text-[18px] mb-3">

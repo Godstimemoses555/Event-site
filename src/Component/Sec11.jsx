@@ -22,7 +22,7 @@ const Sec11 = () => {
             <div className='flex lg:w-[23%] w-full items-center justify-center flex-col shadow-2xl shadow-black'>
 
                 {/* make image container responsive (no fixed 500px) */}
-                <div className='flex w-full max-w-[500px] h-[200px] flex-col'>
+                <div className='flex w-full max-w-[700px] h-[200px] flex-col'>
                 <img onMouseEnter={()=>setDam(!dam)} onMouseLeave={()=>setDam(!dam)} 
                  className='w-full h-[200px] object-cover duration-500' src={eventsimg1} alt="" style={{rotate:dam===true?"-5deg":"0deg"}}/>
             

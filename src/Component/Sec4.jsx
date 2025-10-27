@@ -11,7 +11,7 @@ const Sec4 = () => {
 
 
         <div className=' flex items-center justify-center   gap-[20px] flex-col' >
-            <img className='w-[500px] h-[200px] object-contain' src={header2} alt="" />
+            <img className='w-[400px] h-[200px] object-contain' src={header2} alt="" />
             <div className='flex items-center justify-center gap-[20px]   flex-col'>
                  <h1 className='text-[50px] font-bold text-white '>Our Speakers</h1>
                  <h4 className='text-[20px] text-white tracking-widest text-center'>Meet Our World’s Leading Speakers

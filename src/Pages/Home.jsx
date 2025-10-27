@@ -26,18 +26,16 @@ import Footerdiv from '../Component/Footerdiv'
 const Home = () => {
  
   return (
-  <div className='overflow-hidden'>
+  <div>
 
 
       <Navpc/>
       
   <Navmobile />
-    <div className='lg:hidden h-20 overflow-hidden '>
-        
-      </div>
+   
     
 
-    <div className={`flex h-[100vh] flex-col ` }
+    <div className={`flex h-full flex-col ` }
   
     style={{background:`url(${fullhero})`, backgroundPosition:"center", backgroundRepeat:"no-repeat",backgroundSize:"cover"}}
     
@@ -45,7 +43,7 @@ const Home = () => {
       <Sec1/>
       <Sec2/>
       <Sectext/>
-      {/* <Sec3/> */}
+      <Sec3/>
       <Sec4/>
       <Sec5/>
       <Sec6/>

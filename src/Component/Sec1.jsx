@@ -7,7 +7,7 @@ import accountingimg from "../assets/accountingimg.png"
 const Sec1 = () => {
   return (
     <div>
-        <div className='flex gap-[20px] p-[20px] w-full flex-col lg:flex-row'>
+        <div className='flex gap-[20px] p-[20px] w-full flex-col lg:flex-row h-full'>
 
             <div className='flex w-[100%] lg:w-[50%] gap-[20px] flex-col lg:h-[100%] lg:items-start items-center justify-center' >
 
