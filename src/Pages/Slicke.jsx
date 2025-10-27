@@ -23,11 +23,11 @@ const Slicke = () => {
   };
   return (
     <div>
-    <div className='w-[100%] h-full items-center gap-[20px]' style={{background:`url(${fullhere})`, backgroundPosition: "center",
+    <div className='w-[100%] h-full items-center gap-[20px] overflow-hidden' style={{background:`url(${fullhere})`, backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover"}}>
 
-          <div className=' overflow-hidden'>
+          <div className=' '>
 
             <Slider {...settings}>
       <div className='flex w-[150px] h-[300px]  items-center justify-center  flex-col gap-[8px] p-2.5'>

@@ -32,7 +32,7 @@ const Home = () => {
       <Navpc/>
       
   <Navmobile />
-    <div className='lg:hidden h-20 '>
+    <div className='lg:hidden h-20 overflow-hidden '>
         
       </div>
     
@@ -45,7 +45,7 @@ const Home = () => {
       <Sec1/>
       <Sec2/>
       <Sectext/>
-      <Sec3/>
+      {/* <Sec3/> */}
       <Sec4/>
       <Sec5/>
       <Sec6/>
