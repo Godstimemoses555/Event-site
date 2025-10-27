@@ -8,7 +8,7 @@ const Navmobile = () => {
  const [nav,setNav]=useState(false)
  const [open,setOpen]=useState(false)
   return (
-    <div>
+    <div className='fixed'>
     <div  className="flex lg:hidden items-center justify-between p-4"
      style={{background:`url(${fullhero})`, backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -32,13 +32,15 @@ const Navmobile = () => {
        
     </div>
 
+
+   
     
 
     
 
     <div
-  className={`flex flex-col w-[350px] gap-[20px] p-[10px] items-center justify-center bg-white rounded-[8px]
-  transition-all duration-700 ease-in-out transform
+  className={`flex flex-col w-[370px] gap-[20px] p-[5px] items-center justify-center bg-white rounded-[8px]
+  transition-all duration-700 ease-in-out transform h-fit
   ${nav ? "opacity-100 translate-y-0 h-[350px]" : "opacity-0 -translate-y-5 h-0 overflow-hidden p-[10px]"}
   `}
 >

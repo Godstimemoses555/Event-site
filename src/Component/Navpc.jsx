@@ -18,7 +18,7 @@ const Navpc = () => {
   const [showdropdown,setShowdropdown]=useState(false)
 
   return (
-    <div className='flex gap-[20px] flex-col sticky'>
+    <div className='flex gap-[20px] flex-col '>
 
     
       <div className='w-[100%] gap-[20px] font-bold text-[20px] justify-between hidden lg:flex' style={{background:`url(${fullhero})`,
