@@ -9,7 +9,7 @@ const Features = () => {
         className="flex items-center justify-center min-h-screen w-full bg-cover bg-center bg-no-repeat px-4"
         style={{ backgroundImage: `url(${sec1img})` }}
       >
-        <div className="flex flex-col items-center w-full max-w-[400px]">
+        <div className="flex flex-col items-center w-full max-w-[700px]">
           <img
             className="w-[80%] sm:w-[300px] md:w-[350px] h-auto object-contain"
             src={roundedimg}

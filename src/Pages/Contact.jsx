@@ -5,6 +5,7 @@ import Consec1 from '../Component/Consec1'
 import Navmobile from '../Component/Navmobile'
 import Compsec2 from '../Component/Compsec2'
 import Compsec3 from '../Component/Compsec3'
+import Footerdiv from '../Component/Footerdiv'
 
 const Contact = () => {
   return (
@@ -16,7 +17,8 @@ const Contact = () => {
     <Features/>
     <Consec1/>
     <Compsec2/>
-    <Compsec3/>
+    <Footerdiv/>
+    {/* <Compsec3/> */}
        
     </div>
 
