@@ -3,7 +3,7 @@ import fullhero from "../assets/fullhero.jpg"
 import members from "../assets/members.png"
 import instagram from "../assets/instagram.png"
 import twitter from "../assets/twitter.png"
-import facebook from "../assets/facebook.Png"
+import facebook from "../assets/facebook.png"
 import member5 from "../assets/member5.png"
 import group from "../assets/group.png"
 
