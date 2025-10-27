@@ -8,8 +8,8 @@ const Navmobile = () => {
  const [nav,setNav]=useState(false)
  const [open,setOpen]=useState(false)
   return (
-    <div className='fixed'>
-    <div  className="flex lg:hidden items-center justify-between p-4"
+    <div className='fixed w-[100%] z-999'>
+    <div  className="flex lg:hidden items-center justify-between p-4 "
      style={{background:`url(${fullhero})`, backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover"}}>
@@ -39,13 +39,13 @@ const Navmobile = () => {
     
 
     <div
-  className={`flex flex-col w-[100%] gap-[20px] p-[5px] items-center justify-center bg-white rounded-[8px]
-  transition-all duration-700 ease-in-out transform h-fit
+  className={`flex flex-col  gap-[20px] p-[5px] items-center justify-center bg-white rounded-[8px]
+  transition-all duration-700 ease-in-out transform h-fit w-[100%]
   ${nav ? "opacity-100 translate-y-0 h-[350px]" : "opacity-0 -translate-y-5 h-0 overflow-hidden p-[10px]"}
   `}
 >
   <Link className='text-[20px] text-pink-500 font-bold'>Home</Link>
-  <Link  to={"/"}className='text-[20px] text-pink-500 font-bold'>About</Link>
+  <Link  to={"/"} className='text-[20px] text-pink-500 font-bold'>About</Link>
   <Link to={"/Contact"} className='text-[20px] text-pink-500 font-bold'>Contact</Link>
   <Link className='text-[20px] text-pink-500 font-bold'>Blog</Link>
 
