@@ -121,7 +121,7 @@ const Sec7 = () => {
                     {/* Card 2 - stack on mobile */}
                     <div className="flex flex-col md:flex-row w-full md:w-1/2 items-center md:items-start justify-center gap-6 p-4 bg-transparent">
                         <img
-                            className="w-full md:w-[50%] h-auto md:h-[300px] object-contain"
+                            className="w-full md:w-[200px] h-auto md:h-[200px] object-contain"
                             src={member5}
                             alt="member"
                         />

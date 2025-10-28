@@ -34,7 +34,7 @@ const Sec5 = () => {
           <img
             src={member4}
             alt="member"
-            className="w-full md:w-1/2 h-auto md:h-[300px] object-contain"
+            className="w-full md:w-1/2 h-auto md:h-[200px] object-contain"
           />
 
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-4">
@@ -113,7 +113,7 @@ const Sec5 = () => {
           <img
             src={member1}
             alt="member"
-            className="w-full md:w-1/2 h-auto md:h-[300px] object-contain"
+            className="w-full md:w-1/2 h-auto md:h-[200px] object-contain"
           />
 
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-4">

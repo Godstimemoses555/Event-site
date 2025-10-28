@@ -33,8 +33,7 @@ const Footerdiv = () => {
 
           </a>
          
-          <img className='w-[30px] h-[30px] object-contain' src={facebook} alt="" />
-
+          
         </div>
       </div>
     </div>
