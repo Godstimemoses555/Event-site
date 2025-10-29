@@ -7,6 +7,8 @@ import Sec1 from './Component/Sec1'
 import Navmobile from './Component/Navmobile'
 import Contact from './Pages/Contact'
 import Advance from './Pages/Advance'
+import Loginpages from './Pages/Loginpages'
+
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
             <Route path='/Navmobile' element={<Navmobile/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/advance' element={<Advance/>}/>
+            <Route path='/loginpages' element={<Loginpages/>}/>
+            
         </Routes>
     </Router>
   )

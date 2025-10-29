@@ -20,6 +20,7 @@ import Smalldiv from '../Component/Smalldiv'
 import Footer from '../Component/Footer'
 import Smallfooter from '../Component/Smallfooter'
 import Footerdiv from '../Component/Footerdiv'
+import Totop from '../Component/Totop'
 
 
 
@@ -57,6 +58,7 @@ const Home = () => {
       <Footer/>
       <Smallfooter/>
       <Footerdiv/>
+      <Totop/>
       
 
     </div>
