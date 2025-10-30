@@ -22,7 +22,7 @@ const Loginnav = () => {
               !open?
               (
 
-                  <img onClick={()=>setOpen(!open)} className='lg:w-[20px] lg:h-[20px] object-contain md:w-[10px] sm:w-[10px] sm:h-[10px]'
+                  <img onClick={()=>setOpen(!open)} className='h-[30px] lg:w-[20px] lg:h-[20px] object-contain '
          src={arrow} alt="" />
 
               ):
